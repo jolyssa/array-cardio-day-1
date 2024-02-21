@@ -97,3 +97,16 @@ const transportation = data.reduce((obj, item) => {
 
 }, {})
 
+function squareDigits(num){  
+    return Number (
+     num
+      .toString()
+      .split('')
+      .map(num => num * num)
+      .join('')
+      )
+  }
+  
+  console.log(squareDigits(3212))
+  console.log(squareDigits(2112859))
+  console.log(squareDigits(0))
